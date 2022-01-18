@@ -1,6 +1,6 @@
 # Route Collection Raw Data: MRT Files
 
-Route collector projects (like RIS, Routeviews) store the data they capture in files in the [MRT format](https://tools.ietf.org/html/rfc6396).
+Route collector projects (like RIS, Routeviews) store the data they capture in files in the [MRT format](https://tools.ietf.org/html/rfc6396). This data is useful for looking at the state of the BGP Internet, debugging/post-mortems of events in BGP, and tracking of long term trends in BGP.
 
 Typically 2 types of files are collected: **dumps** and **updates**. Dump files store the state of the routing system at a given time, 
 while update files store all changes to the routing system for a particular interval.
@@ -31,9 +31,10 @@ Currently dumps are created every 8 hours,
 
 ## Tooling
 
-There are multiple tools that are able to parse and extract information from MRT files. This is a non-exhausitive list, of the most used tooling:
+There are multiple tools that are able to parse and extract information from MRT files. This is a non-exhausitive list of the most used tooling:
   * [bgpdump](https://github.com/RIPE-NCC/bgpdump): One of the first MRT parsers, written in C
   * [CAIDA bgpstream](https://bgpstream.caida.org/): Software suite, consisting of commandline, bindings to python, C library
+  * [bgpscanner](https://gitlab.com/Isolario/bgpscanner): MRT parser in C, written for speed. Part of the now-defunct Isolario project
   * [microbgp suite](https://git.doublefourteen.io/bgp/ubgpsuite): MRT parser in C, written for speed
   * [BGPKit](https://github.com/bgpkit/bgpkit-parser): MRT parser written in Rust
   * [java MRT](https://github.com/paaguti/java-mrt): MRT parser written in Java
