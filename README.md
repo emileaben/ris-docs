@@ -38,3 +38,4 @@ There are multiple tools that are able to parse and extract information from MRT
   * [microbgp suite](https://git.doublefourteen.io/bgp/ubgpsuite): MRT parser in C, written for speed
   * [BGPKit](https://github.com/bgpkit/bgpkit-parser): MRT parser written in Rust
   * [java MRT](https://github.com/paaguti/java-mrt): MRT parser written in Java
+  * [mrt parser](https://github.com/sdstrowes/mrt-parser): A minimal, experimental MRT parser in Rust
