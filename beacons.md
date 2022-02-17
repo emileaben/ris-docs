@@ -27,6 +27,10 @@ If one wants to make special arrangements for routing beacons, contact us at ris
 
 # Current Beaconing Setup
 
+For all beacon prefixes below we have a 2 hour up - 2 hour down schedule. Specifically:
+   * Announcements at 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 (UTC)
+   * Withdrawals at 02:00, 06:00, 10:00, 14:00, 18:00, 22:00 (UTC)
+
 | IPv4 prefix      | IPv6 prefix        | type     | origin RRC (IXP/multihop)   |peer location(s)|
 |:-----------------|:-------------------|:---------|:----------------------------|:---------------|
 |84.205.64.0/24	   | 2001:7FB:FE00::/48 | beacon   | RRC00 (multihop)            | global         |
