@@ -30,26 +30,47 @@ If one wants to make special arrangements for routing beacons, contact us at ris
 | IPv4 prefix      | IPv6 prefix        | type     | origin RRC (IXP/multihop)   |peer location(s)|
 |:-----------------|:-------------------|:---------|:----------------------------|:---------------|
 |84.205.64.0/24	   | 2001:7FB:FE00::/48 | beacon   | RRC00 (multihop)            | global         |
+|84.205.80.0/24    | 2001:7FB:FF00::/48 | anchor   |"|"|
 |84.205.65.0/24	   | 2001:7FB:FE01::/48 | beacon   | RRC01 (LINX/LONAP)          | GB             |
-|84.205.67.0/24	   | 2001:7FB:FE03::/48 | beacon   | RRC03 (AMS-IX, NL-IX).      | NL,DK          |
+|84.205.81.0/24    | 2001:7FB:FF01::/48 | anchor   |"|"|
+|84.205.67.0/24	   | 2001:7FB:FE03::/48 | beacon   | RRC03 (AMS-IX, NL-IX)       | NL,DK          |
+|84.205.83.0/24    | 2001:7FB:FF03::/48 | anchor   |"|"|
 |84.205.68.0/24	   | 2001:7FB:FE04::/48 | beacon   | RRC04 (CIXP)                | CH (FR?XXX)    |
+|84.205.84.0/24    | 2001:7FB:FF04::/48 | anchor   |"|"|
 |84.205.69.0/24	   | 2001:7FB:FE05::/48 | beacon   | RRC05 (VIX)                 | AT	            |
+|84.205.85.0/24    | 2001:7FB:FF05::/48 | anchor   |"|"|
 |84.205.70.0/24    | 2001:7FB:FE06::/48 | beacon   | RRC06 (DIX-IE)              | JP             |
+|84.205.86.0/24    | 2001:7FB:FF06::/48 | anchor   |"|"|
 |84.205.71.0/24	   | 2001:7FB:FE07::/48 | beacon   | RRC07 (NETNOD)              | SE	            |
+|84.205.87.0/24    | 2001:7FB:FF07::/48 | anchor   |"|"|
 |84.205.74.0/24    | 2001:7FB:FE0A::/48 | beacon   | RRC10 (MIX)                 | IT             |
+|84.205.90.0/24    | 2001:7FB:FF0A::/48 | anchor   |"|"|
 |84.205.75.0/24	   | 2001:7FB:FE0B::/48 | beacon   | RRC11 (NYIIX)               | US             |
+|84.205.91.0/24    | 2001:7FB:FF0B::/48 | anchor   |"|"|
 |84.205.76.0/24	   | 2001:7FB:FE0C::/48 | beacon   | RRC12 (DE-CIX)              | DE             |
+|84.205.92.0/24    | 2001:7FB:FF0C::/48 | anchor   |"|"|
 |84.205.77.0/24    | 2001:7FB:FE0D::/48 | beacon   | RRC13 (MSK-IX)              | RU	            |
+|84.205.93.0/24    | 2001:7FB:FF0D::/48 | anchor   |"|"|
 |84.205.78.0/24	   | 2001:7FB:FE0E::/48 | beacon   | RRC14 (PAIX)                | US             |
+|84.205.94.0/24    | 2001:7FB:FF0E::/48 | anchor   |"|"|
 |84.205.79.0/24	   | 2001:7FB:FE0F::/48 | beacon   | RRC15 (PTTMetro-SP)         | BR             |
+|84.205.95.0/24    | 2001:7FB:FF0F::/48 | anchor   |"|"|
 |84.205.73.0/24    | 2001:7FB:FE10::/48 | beacon   | RRC16 (NOTA	Miami)         | US             |
+|84.205.89.0/24    | 2001:7FB:FF10::/48 | anchor   |"|"|
 |                  | 2001:7FB:FE12::/48 | beacon   | RRC18 (CATNIX)              | ES             |
+|                  | 2001:7FB:FF12::/48 | anchor   |"|"|
 |84.205.82.0/24    | 2001:7FB:FE13::/48 | beacon   | RRC19 (NAP Africa JB)       | ZA 	          |
+|84.205.88.0/24    | 2001:7FB:FF13::/48 | anchor   |"|"|
 |                  | 2001:7FB:FE14::/48 | beacon   | RRC20 (SwissIX)             | CH             |
+|                  | 2001:7FB:FF14::/48 | anchor   |"|"|
 |93.175.149.0/24	 | 2001:7FB:FE15::/48 | beacon   | RRC21 (FranceIX PAR/MAR)    | FR             |
+|93.175.148.0/24   | 2001:7FB:FF15::/48 | anchor   |"|"|
 |                  | 2001:7FB:FE16::/48 | beacon   | RRC22 (InterLAN)            | RO             |
+|                  | 2001:7FB:FF16::/48 | anchor   |"|"|
 |93.175.151.0/24	 | 2001:7FB:FE17::/48 | beacon   | RRC23 (Equinix Singapore)   | SG             |
+|93.175.150.0/24   | 2001:7FB:FF17::/48 | anchor   |"|"|
 |93.175.153.0/24   | 2001:7FB:FE18::/48 | beacon   | RRC24 (multihop)            | LACNIC region  |
+|93.175.152.0/24   | 2001:7FB:FF18::/48 |anchor|"|"|
 
 
 # History
