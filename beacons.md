@@ -76,6 +76,38 @@ For all beacon prefixes below we have a 2 hour up - 2 hour down schedule. Specif
 |93.175.153.0/24   | 2001:7FB:FE18::/48 | beacon   | RRC24 (multihop)            | LACNIC region  |
 |93.175.152.0/24   | 2001:7FB:FF18::/48 |anchor|"|"|
 
+# Special beaconing setups
+
+## Anycast failover simulation RRC14 (PAIX,US) / RRC03 (AMS-IX/NL-IX, NL):
+
+The prefix 84.205.72.0/24 is permanent announcement from RRC14 (anchor) and it is periodically announced from RRC03 (beacon)
+according to this timetable:
+   * Announcements at 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 (UTC)
+   * Withdrawals at 02:00, 06:00, 10:00, 14:00, 18:00, 22:00 (UTC)
+
+84.205.72.1 is configured as a "pingable address" on both RRCs involved in this setup
+
+| IPv4 prefix      | type     | origin RRC (IXP/multihop)   |peer location(s)|
+|:-----------------|:---------|:----------------------------|:---------------|
+|84.205.72.0/24    | anchor   | RRC14 (PAIX)                | US             |
+|84.205.72.0/24    | beacon   | RRC03 (AMS-IX,NL-IX)        | NL,DK          |
+
+
+## Resource Certification (RPKI) Routing Beacons
+
+A number of prefixes is permanent announcement from RRC03 to provide insight into the visibility of prefixes in various RPKI states. Each prefix has a pingable address at .1 (IPv4) or ::1 (IPv6).
+
+Except for 2001:7fb:fd04::/48 which is announced by AS12654 for RPKI TEST (XXX Florian, do you know what this is supposed to say?)
+
+| IPv4 prefix      | IPv6 prefix        | RPKI state    | RPKI origin    |
+|:-----------------|:-------------------|:--------------|:---------------|
+|93.175.146.0/24   |2001:7fb:fd02::/48  | Valid         | AS12654        |
+|93.175.147.0/24   |2001:7fb:fd03::/48  | Invalid       | AS196615       |
+|84.205.83.0/24    |2001:7fb:ff03::/48  | Unknown       |                |
+|                  |2001:7fb:fd04::/48  | Invalid       | AS196615       |
+
+More information available at [RIPE NCC's Resource Certification (RPKI) pages](https://www.ripe.net/manage-ips-and-asns/resource-management/rpki), and 
+[Routing Certification Beacons on RIPE Labs](https://labs.ripe.net/Members/markd/routing-certification-beacons/)
 
 # History
 
