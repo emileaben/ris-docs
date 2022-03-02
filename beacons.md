@@ -3,8 +3,8 @@
 RIS Route Collectors originate a small number of prefixes. These serve to better understand the state of the global BGP Internet routing system.
 
 These prefixes can be divided into 2 types:
-   * Beacon prefixes: These prefixes are announced and withdrawn according to a set schedule. The propagation of the announcement and widthdrawal, or lack thereof, can inform us about the state of the Internet BGP routing system
-   * Anchor prefixes: These prefixes are supposed to be announced all the time. Typically, one pair of a beacon and anchor prefix is announced from a specific route collector (RRC). This way anchor prefixes can be used to differentiate between activity seen as a result of changes on the originating RRC and that seen for other reasons. iF the anchor flaps, it could mean that the RRC was reloaded and activity of the corresponding beacon can be ignored when doing analysis of the RIS data.
+   * Beacon prefixes: These prefixes are announced and withdrawn according to a set schedule. The propagation of the announcement and withdrawal, or lack thereof, can inform us about the state of the Internet BGP routing system
+   * Anchor prefixes: These prefixes are supposed to be announced all the time. Typically, one pair of a beacon and anchor prefix is announced from a specific route collector (RRC). This way anchor prefixes can be used to differentiate between activity seen as a result of changes on the originating RRC and that seen for other reasons. If the anchor flaps, it could mean that the RRC was reloaded and activity of the corresponding beacon can be ignored when doing analysis of the RIS data.
 
 We ask our peers to accept and propagate our anchor and beacon prefixes, and we try to make an effort to have them seen globally, but it must be noted that
 global visibility of these prefixes is not guaranteed. If you notice any of these prefixes not propagating globally, please let us know at ris@ripe.net
