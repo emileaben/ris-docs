@@ -97,7 +97,7 @@ according to this timetable:
 
 A number of prefixes is permanent announcement from RRC03 to provide insight into the visibility of prefixes in various RPKI states. Each prefix has a pingable address at .1 (IPv4) or ::1 (IPv6).
 
-Except for 2001:7fb:fd04::/48 which is announced by AS12654 for RPKI TEST (XXX Florian, do you know what this is supposed to say?)
+2001:7fb:fd04::/48 is announced by AS15562 for [RPKI TEST](https://www.ripe.net/s/rpki-test).
 
 | IPv4 prefix      | IPv6 prefix        | RPKI state    | RPKI origin    |
 |:-----------------|:-------------------|:--------------|:---------------|
