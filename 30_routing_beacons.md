@@ -1,13 +1,12 @@
 # Routing Beacons
 
-RIS Route Collectors originate a small number of prefixes. These serve to better understand the state of the global BGP Internet routing system.
+A Routing Beacon or BGP Beacon is a Border Gateway Protocol (BGP) speaker that announces and withdraws a particular prefix at predetermined time intervals. RIS Route Collectors originate a small number of routing beacons. These serve to better understand the state of the global BGP Internet routing system, by observing how the announcements and withdrawals of these routing beacons propagate throughout the Internet. The geographically dispersed distribution of the RIS Route Collectors makes them ideal for this purpose.
 
 These prefixes can be divided into 2 types:
    * Beacon prefixes: These prefixes are announced and withdrawn according to a set schedule. The propagation of the announcement and withdrawal, or lack thereof, can inform us about the state of the Internet BGP routing system
    * Anchor prefixes: These prefixes are supposed to be announced all the time. Typically, one pair of a beacon and anchor prefix is announced from a specific route collector (RRC). This way anchor prefixes can be used to differentiate between activity seen as a result of changes on the originating RRC and that seen for other reasons. If the anchor flaps, it could mean that the RRC was reloaded and activity of the corresponding beacon can be ignored when doing analysis of the RIS data.
 
-We ask our peers to accept and propagate our anchor and beacon prefixes, and we try to make an effort to have them seen globally, but it must be noted that
-global visibility of these prefixes is not guaranteed. If you notice any of these prefixes not propagating globally, please let us know at ris@ripe.net
+We ask our peers to accept and propagate our anchor and beacon prefixes, and we try to make an effort to have them seen globally, but it must be noted that global visibility of these prefixes is not guaranteed. If you notice any of these prefixes not propagating globally, please let us know at ris@ripe.net
 
 All IPv4 beacon prefixes are announced with additional attributes. We overload the BGP AGGREGATOR attribute to tag each announcement with a timestamp, a sequence number and the identifier of the RRC making the announcement. These are encoded as follows:
 
@@ -23,7 +22,7 @@ All IPv4 beacon prefixes are announced with additional attributes. We overload t
   
 Adding 64512 brings the resulting number into the private AS number range.
 
-If one wants to make special arrangements for routing beacons, contact us at ris@ripe.net , but keep in mind that in IPv4 the address space that we have available is very limited. An alternative for experiments with routing beacons is the [PEERING project](https://peering.ee.columbia.edu/).
+If one wants to make special arrangements for routing beacons, contact us at ris@ripe.net, but keep in mind that in IPv4 the address space that we have available is very limited. We will evaluate these requests based on the potential benefit to our community as a whole. An alternative for experiments with routing beacons is the [PEERING project](https://peering.ee.columbia.edu/).
 
 # Current Beaconing Setup
 
@@ -111,8 +110,25 @@ More information available at [RIPE NCC's Resource Certification (RPKI) pages](h
 
 # History
 
-Routing beacons started with XXX . RIS has been long-running
+We have archived a description of the historical setup of routing beacons here: https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/historical-list-of-ris-routing-beacons
+
+# Machine readable routing beacon info
 
 Current routing beacon information in machine readable format can be found here:
    
-   ris-routing-beacons.json XXX todo create this file
+   ris-routing-beacons.json
+   
+# Further background reading
+
+TODO include this from original beacon page (and update?)
+Presentations
+Route Flap Damping: Harmful? | Randy Bush, Tim Griffin and Zhuoqing Morley Mao
+What is the Sound of One Route Flapping | Tim Griffin
+Delayed Internet Routing Convergence | C. Labovitz, A. Ahuja, A. Bose and F. Jahanian
+Route Flap Damping Exacerbates Internet Routing Convergence | Zhuoqing Morley Mao, Ramesh Govindan, George Varghese and Randy Katz
+Papers and Documents
+ripe-378: RIPE Routing Working Group Recommendations on Route-flap Damping | Christian Panigl and Philip Smith
+RFC 2439: "BGP Route Flap Damping | C. Villamizar, R. Chandra and R. Govindan
+Further Reading
+Cisco BGP Pages
+Tim Griffin's Interdomain Routing Links
