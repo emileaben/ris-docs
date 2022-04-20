@@ -20,3 +20,22 @@ Locations are also available in dns LOC records
 RIPEstat includes a metadata call with more information: https://stat.ripe.net/docs/data_api#rrc-info
 
 We also have a list of peers per RRC: https://www.ris.ripe.net/peerlist/all.shtml
+
+## BGP Timer settings
+
+Since BGP Timer settings influence data collection we document their settings here:
+
+BGP Timer settings since 23 November 2006:
+
+  * Keepalives: 60 seconds
+  * Holddown: 180 seconds
+
+BGP Timer settings between 17 October 2002 and 23 November 2006:
+
+  * Keepalives: 0 (disabled)
+  * Holddown: 0 (disabled)
+
+BGP Timer settings before 17 October 2002:
+
+  * Keepalives: 60 seconds
+  * Holddown: 180 seconds
