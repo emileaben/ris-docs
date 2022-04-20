@@ -24,7 +24,7 @@ Adding 64512 brings the resulting number into the private AS number range.
 
 If one wants to make special arrangements for routing beacons, contact us at ris@ripe.net, but keep in mind that in IPv4 the address space that we have available is very limited. We will evaluate these requests based on the potential benefit to our community as a whole. An alternative for experiments with routing beacons is the [PEERING project](https://peering.ee.columbia.edu/).
 
-# Current Beaconing Setup
+## Current Beaconing Setup
 
 For all beacon prefixes below we have a 2 hour up - 2 hour down schedule. Specifically:
    * Announcements at 00:00, 04:00, 08:00, 12:00, 16:00, 20:00 (UTC)
@@ -38,7 +38,7 @@ For all beacon prefixes below we have a 2 hour up - 2 hour down schedule. Specif
 |84.205.81.0/24    | 2001:7FB:FF01::/48 | anchor   |"|"|
 |84.205.67.0/24	   | 2001:7FB:FE03::/48 | beacon   | RRC03 (AMS-IX, NL-IX)       | NL,DK          |
 |84.205.83.0/24    | 2001:7FB:FF03::/48 | anchor   |"|"|
-|84.205.68.0/24	   | 2001:7FB:FE04::/48 | beacon   | RRC04 (CIXP)                | CH (FR?XXX)    |
+|84.205.68.0/24	   | 2001:7FB:FE04::/48 | beacon   | RRC04 (CIXP)                | CH,FR          |
 |84.205.84.0/24    | 2001:7FB:FF04::/48 | anchor   |"|"|
 |84.205.69.0/24	   | 2001:7FB:FE05::/48 | beacon   | RRC05 (VIX)                 | AT	            |
 |84.205.85.0/24    | 2001:7FB:FF05::/48 | anchor   |"|"|
@@ -75,9 +75,9 @@ For all beacon prefixes below we have a 2 hour up - 2 hour down schedule. Specif
 |93.175.153.0/24   | 2001:7FB:FE18::/48 | beacon   | RRC24 (multihop)            | LACNIC region  |
 |93.175.152.0/24   | 2001:7FB:FF18::/48 |anchor|"|"|
 
-# Special beaconing setups
+## Special beaconing setups
 
-## Anycast failover simulation RRC14 (PAIX,US) / RRC03 (AMS-IX/NL-IX, NL):
+### Anycast failover simulation
 
 The prefix 84.205.72.0/24 is permanent announcement from RRC14 (anchor) and it is periodically announced from RRC03 (beacon)
 according to this timetable:
@@ -92,7 +92,7 @@ according to this timetable:
 |84.205.72.0/24    | beacon   | RRC03 (AMS-IX,NL-IX)        | NL,DK          |
 
 
-## Resource Certification (RPKI) Routing Beacons
+### Resource Certification (RPKI) Routing Beacons
 
 A number of prefixes is permanent announcement from RRC03 to provide insight into the visibility of prefixes in various RPKI states. Each prefix has a pingable address at .1 (IPv4) or ::1 (IPv6).
 
@@ -110,7 +110,7 @@ More information available at [RIPE NCC's Resource Certification (RPKI) pages](h
 
 # History
 
-We have archived a description of the historical setup of routing beacons here: https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/historical-list-of-ris-routing-beacons
+We have archived a description of the historical setup of routing beacons here: https://www.ripe.net/analyse/internet-measurements/routing-information-service-ris/historical-list-of-ris-routing-beacons . This description is not entirely accurate and complete, but should serve as a starting point if one wants to study routing beacons pre 20216.
 
 # Machine readable routing beacon info
 
