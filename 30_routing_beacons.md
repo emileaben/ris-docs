@@ -118,7 +118,20 @@ Current routing beacon information in machine readable format can be found here:
    
    ris-routing-beacons.json
    
-# Further background reading
+# Further background reading TODO
+
+Some research, presentations and other external documentation on uses of routing beacons can be found here:
+
+## Route Flap Dampening (RFD)
+  * [RFC 2439](https://datatracker.ietf.org/doc/html/rfc2439): BGP Route Flap Damping | C. Villamizar, R. Chandra and R. Govindan
+  * [ripe-580](https://www.ripe.net/publications/docs/ripe-580): RIPE Routing Working Group Recommendations on Route Flap Damping | Randy Bush, Cristel Pelsser, Mirjam Kuhne, Olaf Maennel, Pradosh Mohapatra, Keyur Patel, Rob Evans
+
+## Ghost routes/zombie routes
+  * [BGP Zombies](https://labs.ripe.net/author/romain_fontugne/bgp-zombies/) | Romain Fontugne and Emile Aben
+  * [BGP Zombies: an Analysis of Beacons Stuck Routes](https://hal.inria.fr/hal-01970596/document) | Romain Fontugne, Esteban Bautista, Colin Petrie, Yutaro Nomura, Patrice Abry, Paulo Gonçalves, Kensuke Fukuda, Emile Aben
+
+## General BGP background
+  * [Tim Griffin's Interdomain Routing page](https://www.cl.cam.ac.uk/~tgg22/interdomain/)
 
 TODO include this from original beacon page (and update?)
 Presentations
@@ -126,9 +139,3 @@ Route Flap Damping: Harmful? | Randy Bush, Tim Griffin and Zhuoqing Morley Mao
 What is the Sound of One Route Flapping | Tim Griffin
 Delayed Internet Routing Convergence | C. Labovitz, A. Ahuja, A. Bose and F. Jahanian
 Route Flap Damping Exacerbates Internet Routing Convergence | Zhuoqing Morley Mao, Ramesh Govindan, George Varghese and Randy Katz
-Papers and Documents
-ripe-378: RIPE Routing Working Group Recommendations on Route-flap Damping | Christian Panigl and Philip Smith
-RFC 2439: "BGP Route Flap Damping | C. Villamizar, R. Chandra and R. Govindan
-Further Reading
-Cisco BGP Pages
-Tim Griffin's Interdomain Routing Links
